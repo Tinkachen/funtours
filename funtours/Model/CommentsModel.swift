@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+class Comments {
+    
+    var creator: String?
+    var date: NSDate?
+    var text: String?
+    
+    var likes: Int?
+    
+    init(creator: String?, date: NSDate?, text: String?, likes: Int?) {
+        self.creator = creator
+        self.date = date
+        self.text = text
+        self.likes = likes
+    }
+}

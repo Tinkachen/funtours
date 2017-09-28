@@ -7,8 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2351740F1F7D26AB007704DF /* TourDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351740E1F7D26AB007704DF /* TourDataModel.swift */; };
+		235174111F7D26C7007704DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174101F7D26C7007704DF /* MainViewController.swift */; };
+		235174131F7D2DAF007704DF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174121F7D2DAF007704DF /* Color.swift */; };
+		235174151F7D2FB8007704DF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174141F7D2FB8007704DF /* Font.swift */; };
+		235174191F7D3254007704DF /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174181F7D3254007704DF /* StationModel.swift */; };
+		2351741B1F7D327B007704DF /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351741A1F7D327B007704DF /* CommentsModel.swift */; };
+		2351741D1F7D36A7007704DF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351741C1F7D36A7007704DF /* ModelManager.swift */; };
 		23C89C8F1F4EA99300C1B9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C89C8E1F4EA99300C1B9FA /* AppDelegate.swift */; };
-		23C89C911F4EA99300C1B9FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C89C901F4EA99300C1B9FA /* ViewController.swift */; };
 		23C89C941F4EA99300C1B9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C921F4EA99300C1B9FA /* Main.storyboard */; };
 		23C89C961F4EA99300C1B9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C951F4EA99300C1B9FA /* Assets.xcassets */; };
 		23C89C991F4EA99300C1B9FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C971F4EA99300C1B9FA /* LaunchScreen.storyboard */; };
@@ -26,9 +32,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2351740E1F7D26AB007704DF /* TourDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDataModel.swift; sourceTree = "<group>"; };
+		235174101F7D26C7007704DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		235174121F7D2DAF007704DF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		235174141F7D2FB8007704DF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		235174181F7D3254007704DF /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		2351741A1F7D327B007704DF /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
+		2351741C1F7D36A7007704DF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		23C89C8B1F4EA99300C1B9FA /* funtours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funtours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C89C8E1F4EA99300C1B9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23C89C901F4EA99300C1B9FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		23C89C931F4EA99300C1B9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23C89C951F4EA99300C1B9FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23C89C981F4EA99300C1B9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +68,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235174161F7D3051007704DF /* DesignElements */ = {
+			isa = PBXGroup;
+			children = (
+				235174121F7D2DAF007704DF /* Color.swift */,
+				235174141F7D2FB8007704DF /* Font.swift */,
+			);
+			path = DesignElements;
+			sourceTree = "<group>";
+		};
+		235174171F7D3061007704DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2351741C1F7D36A7007704DF /* ModelManager.swift */,
+				2351740E1F7D26AB007704DF /* TourDataModel.swift */,
+				2351741A1F7D327B007704DF /* CommentsModel.swift */,
+				235174181F7D3254007704DF /* StationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		23C89C821F4EA99300C1B9FA = {
 			isa = PBXGroup;
 			children = (
@@ -78,8 +110,10 @@
 			isa = PBXGroup;
 			children = (
 				23C89C8E1F4EA99300C1B9FA /* AppDelegate.swift */,
-				23C89C901F4EA99300C1B9FA /* ViewController.swift */,
 				23C89C921F4EA99300C1B9FA /* Main.storyboard */,
+				235174161F7D3051007704DF /* DesignElements */,
+				235174171F7D3061007704DF /* Model */,
+				235174101F7D26C7007704DF /* MainViewController.swift */,
 				23C89C951F4EA99300C1B9FA /* Assets.xcassets */,
 				23C89C971F4EA99300C1B9FA /* LaunchScreen.storyboard */,
 				23C89C9A1F4EA99300C1B9FA /* Info.plist */,
@@ -201,8 +235,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23C89C911F4EA99300C1B9FA /* ViewController.swift in Sources */,
+				2351740F1F7D26AB007704DF /* TourDataModel.swift in Sources */,
+				2351741D1F7D36A7007704DF /* ModelManager.swift in Sources */,
+				235174131F7D2DAF007704DF /* Color.swift in Sources */,
+				235174151F7D2FB8007704DF /* Font.swift in Sources */,
 				23C89C8F1F4EA99300C1B9FA /* AppDelegate.swift in Sources */,
+				235174191F7D3254007704DF /* StationModel.swift in Sources */,
+				2351741B1F7D327B007704DF /* CommentsModel.swift in Sources */,
+				235174111F7D26C7007704DF /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +337,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 			};
 			name = Debug;
 		};
@@ -345,6 +386,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

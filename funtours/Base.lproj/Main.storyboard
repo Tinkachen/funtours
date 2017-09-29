@@ -34,26 +34,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jvs-Ii-f7H">
-                                <rect key="frame" x="120" y="344" width="121" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                </segments>
-                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YhX-CH-zT3">
+                                <rect key="frame" x="335" y="315" width="30" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="n2R-7q-w8B"/>
+                                    <constraint firstAttribute="height" constant="30" id="qQX-Ns-AoG"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="riW-sQ-vdV" firstAttribute="top" secondItem="Ssq-YD-u0g" secondAttribute="bottom" constant="10" id="3EK-8X-kbg"/>
                             <constraint firstAttribute="trailing" secondItem="Ssq-YD-u0g" secondAttribute="trailing" id="7yL-wx-hky"/>
                             <constraint firstAttribute="trailing" secondItem="riW-sQ-vdV" secondAttribute="trailing" id="H6o-EV-8rT"/>
+                            <constraint firstItem="YhX-CH-zT3" firstAttribute="top" secondItem="riW-sQ-vdV" secondAttribute="bottom" constant="10" id="LpH-t8-17M"/>
+                            <constraint firstAttribute="trailing" secondItem="YhX-CH-zT3" secondAttribute="trailing" constant="10" id="cmS-uA-uhO"/>
                             <constraint firstItem="Ssq-YD-u0g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dvr-eA-L1o"/>
                             <constraint firstItem="Ssq-YD-u0g" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="pg5-0l-GiA"/>
                             <constraint firstItem="riW-sQ-vdV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xfm-MJ-9IX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TPs-5w-zg1"/>
+                    <connections>
+                        <outlet property="sortView" destination="YhX-CH-zT3" id="xcj-gA-mrq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,6 +19,7 @@
 		23C89C961F4EA99300C1B9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C951F4EA99300C1B9FA /* Assets.xcassets */; };
 		23C89C991F4EA99300C1B9FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C971F4EA99300C1B9FA /* LaunchScreen.storyboard */; };
 		23C89CA41F4EA99300C1B9FA /* funtoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C89CA31F4EA99300C1B9FA /* funtoursTests.swift */; };
+		2EF0A533A20D2F77F84E5097 /* Pods_funtours.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 551D1B9C9BB7E63D0761260B /* Pods_funtours.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,9 @@
 		23C89C9F1F4EA99300C1B9FA /* funtoursTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = funtoursTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C89CA31F4EA99300C1B9FA /* funtoursTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funtoursTests.swift; sourceTree = "<group>"; };
 		23C89CA51F4EA99300C1B9FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551D1B9C9BB7E63D0761260B /* Pods_funtours.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_funtours.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D33AF2AAB49077D2391D364 /* Pods-funtours.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funtours.release.xcconfig"; path = "Pods/Target Support Files/Pods-funtours/Pods-funtours.release.xcconfig"; sourceTree = "<group>"; };
+		93A3495C6FBDFD96B497C52F /* Pods-funtours.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-funtours.debug.xcconfig"; path = "Pods/Target Support Files/Pods-funtours/Pods-funtours.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EF0A533A20D2F77F84E5097 /* Pods_funtours.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,8 @@
 				23C89C8D1F4EA99300C1B9FA /* funtours */,
 				23C89CA21F4EA99300C1B9FA /* funtoursTests */,
 				23C89C8C1F4EA99300C1B9FA /* Products */,
+				C4FA8E2E1D7AFB57ED8A48D2 /* Pods */,
+				C4CA173CE50F0EBA5F853BAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,23 @@
 			path = funtoursTests;
 			sourceTree = "<group>";
 		};
+		C4CA173CE50F0EBA5F853BAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				551D1B9C9BB7E63D0761260B /* Pods_funtours.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4FA8E2E1D7AFB57ED8A48D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93A3495C6FBDFD96B497C52F /* Pods-funtours.debug.xcconfig */,
+				8D33AF2AAB49077D2391D364 /* Pods-funtours.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23C89CA81F4EA99300C1B9FA /* Build configuration list for PBXNativeTarget "funtours" */;
 			buildPhases = (
+				125AF0A3F4ABE5D94CEE114F /* [CP] Check Pods Manifest.lock */,
 				23C89C871F4EA99300C1B9FA /* Sources */,
 				23C89C881F4EA99300C1B9FA /* Frameworks */,
 				23C89C891F4EA99300C1B9FA /* Resources */,
+				634955904E731835377ECFC8 /* [CP] Embed Pods Frameworks */,
+				F2A6214A7C62D966B5FE8AAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,6 +256,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		125AF0A3F4ABE5D94CEE114F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-funtours-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		634955904E731835377ECFC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-funtours/Pods-funtours-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MTRadialMenu/MTRadialMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MTRadialMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-funtours/Pods-funtours-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A6214A7C62D966B5FE8AAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-funtours/Pods-funtours-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23C89C871F4EA99300C1B9FA /* Sources */ = {
@@ -393,26 +480,33 @@
 		};
 		23C89CA91F4EA99300C1B9FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93A3495C6FBDFD96B497C52F /* Pods-funtours.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = funtours/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.itinka.funtours;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_OBJC_BRIDGING_HEADER = "funtours/DesignElements/MTRadialMenu/funtours-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
 		23C89CAA1F4EA99300C1B9FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D33AF2AAB49077D2391D364 /* Pods-funtours.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = funtours/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.itinka.funtours;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_OBJC_BRIDGING_HEADER = "funtours/DesignElements/MTRadialMenu/funtours-Bridging-Header.h";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;

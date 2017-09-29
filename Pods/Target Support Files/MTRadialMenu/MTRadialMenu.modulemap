@@ -1,0 +1,6 @@
+framework module MTRadialMenu {
+  umbrella header "MTRadialMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

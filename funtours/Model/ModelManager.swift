@@ -7,8 +7,24 @@
 //
 
 import Foundation
-
+import Alamofire
+import SwiftyJSON
 
 class ModelManager: NSObject {
+    
+    static let sharedInstance = ModelManager.init()
+    
+    var tourEntries: [TourData] = []
+    
+    override init() {
+        super.init()
+        
+        self.getData()
+    }
+    
+    func getData () {
+        
+    }
+    
     
 }

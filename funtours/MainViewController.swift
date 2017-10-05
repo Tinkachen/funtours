@@ -31,18 +31,18 @@ class MainViewController: UIViewController {
         
         let distance: Distance = Distance()
         distance.identifier = "distance"
-        distance.fillColorNormal = UIColor.hippieBlue()
-        distance.fillColorSelected = UIColor.sundance()
+        distance.colorNormal = UIColor.hippieBlue()
+        distance.colorSelected = UIColor.smaltBlue()
         
         let popularity: Popularity = Popularity()
         popularity.identifier = "popularity"
-        popularity.fillColorNormal = UIColor.hippieBlue()
-        popularity.fillColorSelected = UIColor.sundance()
+        popularity.colorNormal = UIColor.hippieBlue()
+        popularity.colorSelected = UIColor.smaltBlue()
         
         let dure: Dure = Dure()
         dure.identifier = "dure"
-        dure.fillColorNormal = UIColor.hippieBlue()
-        dure.fillColorSelected = UIColor.sundance()
+        dure.colorNormal = UIColor.hippieBlue()
+        dure.colorSelected = UIColor.smaltBlue()
         
         menu.add(distance)
         menu.add(popularity)

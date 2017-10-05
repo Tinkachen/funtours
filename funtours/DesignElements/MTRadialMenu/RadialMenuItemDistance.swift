@@ -14,7 +14,7 @@ import MTRadialMenu.MTMenuItem
 class Distance: MTMenuItem {
     
     var colorNormal: UIColor! = UIColor.hippieBlue()
-    var colorSelected: UIColor! = UIColor.sundance()
+    var colorSelected: UIColor! = UIColor.smaltBlue()
     var fillColor3: UIColor! = UIColor.white
     
     override init(frame: CGRect) {
@@ -53,7 +53,6 @@ class Distance: MTMenuItem {
         fillColor3.setStroke()
         bezierPath.lineWidth = 3
         bezierPath.stroke()
-        
         
     }
 }

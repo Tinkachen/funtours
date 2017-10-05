@@ -96,9 +96,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ev-tN-Nst">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ev-tN-Nst">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-oe-zeM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fr-oW-KtN">
                                 <rect key="frame" x="41" y="45" width="293" height="597"/>
                                 <subviews>
@@ -174,16 +178,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5ev-tN-Nst" firstAttribute="leading" secondItem="nMI-ab-ghY" secondAttribute="leading" id="6UR-nk-dO8"/>
+                            <constraint firstItem="ihT-oe-zeM" firstAttribute="width" secondItem="5ev-tN-Nst" secondAttribute="width" id="AQi-dz-yxg"/>
                             <constraint firstItem="z30-Ua-w74" firstAttribute="top" secondItem="5fr-oW-KtN" secondAttribute="bottom" constant="25" id="Dsp-Dw-JG3"/>
+                            <constraint firstItem="ihT-oe-zeM" firstAttribute="height" secondItem="5ev-tN-Nst" secondAttribute="height" id="OKv-zf-NDv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5fr-oW-KtN" secondAttribute="trailing" constant="25" id="PwO-cg-0VV"/>
                             <constraint firstItem="5fr-oW-KtN" firstAttribute="top" secondItem="pOg-UC-7nV" secondAttribute="bottom" constant="25" id="Uki-OP-XW3"/>
                             <constraint firstItem="5fr-oW-KtN" firstAttribute="leading" secondItem="nMI-ab-ghY" secondAttribute="leadingMargin" constant="25" id="ahM-bd-0CX"/>
+                            <constraint firstItem="ihT-oe-zeM" firstAttribute="leading" secondItem="nMI-ab-ghY" secondAttribute="leading" id="axx-oG-AAL"/>
+                            <constraint firstItem="ihT-oe-zeM" firstAttribute="top" secondItem="pOg-UC-7nV" secondAttribute="bottom" id="hf1-QZ-YES"/>
+                            <constraint firstAttribute="trailing" secondItem="ihT-oe-zeM" secondAttribute="trailing" id="lkC-NU-3ix"/>
+                            <constraint firstItem="z30-Ua-w74" firstAttribute="top" secondItem="ihT-oe-zeM" secondAttribute="bottom" id="naE-Zq-pmA"/>
                             <constraint firstItem="5ev-tN-Nst" firstAttribute="top" secondItem="pOg-UC-7nV" secondAttribute="bottom" id="raO-o8-5ci"/>
                             <constraint firstItem="z30-Ua-w74" firstAttribute="top" secondItem="5ev-tN-Nst" secondAttribute="bottom" id="tFj-C2-cy3"/>
                             <constraint firstAttribute="trailing" secondItem="5ev-tN-Nst" secondAttribute="trailing" id="zgo-8c-q2m"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundFilter" destination="ihT-oe-zeM" id="ZwC-Ci-dbj"/>
                         <outlet property="backgroundImage" destination="5ev-tN-Nst" id="TuD-B3-43O"/>
                         <outlet property="containerView" destination="5fr-oW-KtN" id="gsU-3w-Zcg"/>
                         <outlet property="descriptionLabel" destination="peh-89-hmU" id="Vs7-8M-fi8"/>

@@ -14,7 +14,7 @@ import MTRadialMenu.MTMenuItem
 class Dure: MTMenuItem {
     
     var colorNormal: UIColor! = UIColor.hippieBlue()
-    var colorSelected: UIColor! = UIColor.sundance()
+    var colorSelected: UIColor! = UIColor.smaltBlue()
     var fillColor3: UIColor! = UIColor.white
     
     override init(frame: CGRect) {

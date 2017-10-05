@@ -12,6 +12,7 @@ import UIKit
 class PopularView: UIViewController {
     
     @IBOutlet var backgroundImage: UIImageView!
+    @IBOutlet var backgroundFilter: UIView!
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var imageView: UIImageView!
@@ -29,7 +30,7 @@ class PopularView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        backgroundImage.image = data.image
+        self.filterForBackgroundImage(image: data.image)
         imageView.image = data.image
         
         titleLabel.text = data.tourName
@@ -44,5 +45,15 @@ class PopularView: UIViewController {
     
     func updateContent (data: TourData) {
         self.data = data
+    }
+    
+    func filterForBackgroundImage (image: UIImage?) {
+        
+        backgroundFilter.backgroundColor = UIColor.Colors.randomColor()
+        backgroundFilter.layer.opacity = 0.75
+
+        backgroundImage.image = image
+        backgroundImage.addSubview(backgroundFilter)
+        
     }
 }

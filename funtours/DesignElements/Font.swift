@@ -20,7 +20,7 @@ public extension UIFont {
     }
     
     static func mediumFont (size: CGFloat) -> (UIFont) {
-        return UIFont(name: "medium-Regular", size: size)!
+        return UIFont(name: "Hind-Medium", size: size)!
     }
     
     static func semiBoldFont (size: CGFloat) -> (UIFont) {

@@ -48,7 +48,7 @@ public extension UIColor {
     
     // Table Colors
     
-    static func HippieBlue () -> UIColor {
+    static func hippieBlue () -> UIColor {
         return UIColor(red:0.33, green:0.64, blue:0.66, alpha:1.00)
     }
     

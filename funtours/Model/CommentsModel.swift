@@ -11,12 +11,12 @@ import Foundation
 class Comments {
     
     var creator: String?
-    var date: NSDate?
+    var date: String?
     var text: String?
     
     var likes: Int?
     
-    init(creator: String?, date: NSDate?, text: String?, likes: Int?) {
+    init(creator: String?, date: String?, text: String?, likes: Int?) {
         self.creator = creator
         self.date = date
         self.text = text

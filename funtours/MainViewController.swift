@@ -19,26 +19,30 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.createRadialMenue()
+        self.createRadialMenu()
     }
     
-    func createRadialMenue () {
+    func createRadialMenu () {
         
         let menu: MTRadialMenu = MTRadialMenu()
-        
-        
         
         menu.startingAngle = 10.0
         menu.incrementAngle = -60.0
         
-        let distance: MTMenuItem = MTMenuItem()
+        let distance: Distance = Distance()
         distance.identifier = "distance"
+        distance.fillColorNormal = UIColor.hippieBlue()
+        distance.fillColorSelected = UIColor.sundance()
         
-        let popularity: MTMenuItem = MTMenuItem()
+        let popularity: Popularity = Popularity()
         popularity.identifier = "popularity"
+        popularity.fillColorNormal = UIColor.hippieBlue()
+        popularity.fillColorSelected = UIColor.sundance()
         
-        let dure: MTMenuItem = MTMenuItem()
+        let dure: Dure = Dure()
         dure.identifier = "dure"
+        dure.fillColorNormal = UIColor.hippieBlue()
+        dure.fillColorSelected = UIColor.sundance()
         
         menu.add(distance)
         menu.add(popularity)

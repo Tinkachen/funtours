@@ -33,6 +33,9 @@
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="SIo-Qc-H0C" secondAttribute="bottom" id="V98-g0-ZBi"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

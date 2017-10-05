@@ -33,6 +33,12 @@ class PopularView: UIViewController {
         self.filterForBackgroundImage(image: data.image)
         imageView.image = data.image
         
+        containerView.backgroundColor = UIColor.white
+        containerView.layer.shadowColor = UIColor.black.cgColor
+        containerView.layer.shadowOpacity = 1
+        containerView.layer.shadowOffset = CGSize.zero
+        containerView.layer.shadowRadius = 10
+        
         titleLabel.text = data.tourName
         descriptionLabel.text = data.tourDescription
         favLabel.text = "\(data.favs != nil ? data.favs! : 0)"
@@ -49,8 +55,8 @@ class PopularView: UIViewController {
     
     func filterForBackgroundImage (image: UIImage?) {
         
-        backgroundFilter.backgroundColor = UIColor.Colors.randomColor()
-        backgroundFilter.layer.opacity = 0.75
+        backgroundFilter.backgroundColor = data.rdmColor
+        backgroundFilter.layer.opacity = 0.60
 
         backgroundImage.image = image
         backgroundImage.addSubview(backgroundFilter)

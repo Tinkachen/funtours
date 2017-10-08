@@ -16,7 +16,7 @@ class PopularPageViewController: UIPageViewController, UIPageViewControllerDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tourData = TourData.createDummyData()
+        tourData = TourData.createPopularDummyData()
         
         self.dataSource = self
         

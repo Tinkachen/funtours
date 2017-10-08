@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		232F48651F8A684500B9D79B /* Hind-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232F48641F8A67A300B9D79B /* Hind-Bold.ttf */; };
+		232F48661F8A684500B9D79B /* Hind-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232F48601F8A67A300B9D79B /* Hind-Light.ttf */; };
+		232F48671F8A684500B9D79B /* Hind-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232F48631F8A67A300B9D79B /* Hind-Medium.ttf */; };
+		232F48681F8A684500B9D79B /* Hind-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232F48611F8A67A300B9D79B /* Hind-Regular.ttf */; };
+		232F48691F8A684500B9D79B /* Hind-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 232F48621F8A67A300B9D79B /* Hind-Semibold.ttf */; };
 		2351740F1F7D26AB007704DF /* TourDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351740E1F7D26AB007704DF /* TourDataModel.swift */; };
 		235174111F7D26C7007704DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174101F7D26C7007704DF /* MainViewController.swift */; };
 		235174131F7D2DAF007704DF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174121F7D2DAF007704DF /* Color.swift */; };
@@ -38,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		232F48601F8A67A300B9D79B /* Hind-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Light.ttf"; sourceTree = "<group>"; };
+		232F48611F8A67A300B9D79B /* Hind-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Regular.ttf"; sourceTree = "<group>"; };
+		232F48621F8A67A300B9D79B /* Hind-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Semibold.ttf"; sourceTree = "<group>"; };
+		232F48631F8A67A300B9D79B /* Hind-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Medium.ttf"; sourceTree = "<group>"; };
+		232F48641F8A67A300B9D79B /* Hind-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hind-Bold.ttf"; sourceTree = "<group>"; };
 		2351740E1F7D26AB007704DF /* TourDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourDataModel.swift; sourceTree = "<group>"; };
 		235174101F7D26C7007704DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		235174121F7D2DAF007704DF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -84,6 +94,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		232F485F1F8A678900B9D79B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				232F48641F8A67A300B9D79B /* Hind-Bold.ttf */,
+				232F48601F8A67A300B9D79B /* Hind-Light.ttf */,
+				232F48631F8A67A300B9D79B /* Hind-Medium.ttf */,
+				232F48611F8A67A300B9D79B /* Hind-Regular.ttf */,
+				232F48621F8A67A300B9D79B /* Hind-Semibold.ttf */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
 		235174161F7D3051007704DF /* DesignElements */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +171,7 @@
 				23C89C951F4EA99300C1B9FA /* Assets.xcassets */,
 				23C89C971F4EA99300C1B9FA /* LaunchScreen.storyboard */,
 				23C89C9A1F4EA99300C1B9FA /* Info.plist */,
+				232F485F1F8A678900B9D79B /* SupportFiles */,
 			);
 			path = funtours;
 			sourceTree = "<group>";
@@ -267,6 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				232F48651F8A684500B9D79B /* Hind-Bold.ttf in Resources */,
+				232F48661F8A684500B9D79B /* Hind-Light.ttf in Resources */,
+				232F48671F8A684500B9D79B /* Hind-Medium.ttf in Resources */,
+				232F48681F8A684500B9D79B /* Hind-Regular.ttf in Resources */,
+				232F48691F8A684500B9D79B /* Hind-Semibold.ttf in Resources */,
 				23C89C991F4EA99300C1B9FA /* LaunchScreen.storyboard in Resources */,
 				23C89C961F4EA99300C1B9FA /* Assets.xcassets in Resources */,
 				23C89C941F4EA99300C1B9FA /* Main.storyboard in Resources */,

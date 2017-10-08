@@ -11,8 +11,8 @@ import UIKit
 
 class PopularView: UIViewController {
     
-    @IBOutlet var backgroundImage: UIImageView!
-    @IBOutlet var backgroundFilter: UIView!
+    @IBOutlet var backgroundImageView: UIImageView!
+    @IBOutlet var backgroundFilterView: UIView!
     
     @IBOutlet var containerView: UIView!
     @IBOutlet var imageView: UIImageView!
@@ -23,6 +23,8 @@ class PopularView: UIViewController {
     @IBOutlet var favLabel: UILabel!
     @IBOutlet var dureLabel: UILabel!
     
+    @IBOutlet var showBtn: UIButton!
+    
     var pageIndex: Int! = 0
     
     var data: TourData!
@@ -30,7 +32,7 @@ class PopularView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.filterForBackgroundImage(image: data.image)
+        self.filterForBackgroundImage()
         imageView.image = data.image
         
         containerView.backgroundColor = UIColor.white
@@ -43,6 +45,10 @@ class PopularView: UIViewController {
         descriptionLabel.text = data.tourDescription
         favLabel.text = "\(data.favs != nil ? data.favs! : 0)"
         dureLabel.text = "1"
+        
+        showBtn.tintColor = UIColor.white
+        showBtn.backgroundColor = data.rdmColor
+        showBtn.layer.cornerRadius = showBtn.bounds.size.height / 2
     }
     
     override func didReceiveMemoryWarning() {
@@ -53,13 +59,13 @@ class PopularView: UIViewController {
         self.data = data
     }
     
-    func filterForBackgroundImage (image: UIImage?) {
+    func filterForBackgroundImage () {
         
-        backgroundFilter.backgroundColor = data.rdmColor
-        backgroundFilter.layer.opacity = 0.60
+        backgroundFilterView.backgroundColor = data.rdmColor
+        backgroundFilterView.layer.opacity = 0.60
 
-        backgroundImage.image = image
-        backgroundImage.addSubview(backgroundFilter)
+        backgroundImageView.image = data.image
+        backgroundImageView.addSubview(backgroundFilterView)
         
     }
 }

@@ -76,28 +76,28 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-hr-aEO">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-hr-aEO">
                                                             <rect key="frame" x="5" y="5" width="10" height="10"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="10" id="OH5-er-rCO"/>
                                                                 <constraint firstAttribute="width" constant="10" id="w99-PF-9hp"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uVA-bP-3IJ">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dure" translatesAutoresizingMaskIntoConstraints="NO" id="uVA-bP-3IJ">
                                                             <rect key="frame" x="5" y="84.5" width="10" height="10"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="10" id="1d4-YY-S3N"/>
                                                                 <constraint firstAttribute="height" constant="10" id="asR-46-hoH"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p7s-vO-4Yp">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="p7s-vO-4Yp">
                                                             <rect key="frame" x="360" y="5" width="10" height="10"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="10" id="Gj4-og-X1N"/>
                                                                 <constraint firstAttribute="height" constant="10" id="p9O-0e-Aws"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NLH-kt-zFA">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="creator" translatesAutoresizingMaskIntoConstraints="NO" id="NLH-kt-zFA">
                                                             <rect key="frame" x="360" y="84.5" width="10" height="10"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="10" id="7eQ-oz-epF"/>
@@ -153,9 +153,13 @@
                                         <connections>
                                             <outlet property="backgroundFilterView" destination="xyk-a1-Ig5" id="kmm-nc-mWp"/>
                                             <outlet property="backgroundImageView" destination="VBp-36-H3h" id="Rr4-Sx-0FX"/>
+                                            <outlet property="creatorImageView" destination="NLH-kt-zFA" id="Y7p-O6-mt4"/>
                                             <outlet property="creatorLabel" destination="ypQ-h4-fMy" id="rFi-m2-h2u"/>
+                                            <outlet property="dureImageView" destination="uVA-bP-3IJ" id="tRf-KR-S1S"/>
                                             <outlet property="dureLabel" destination="cwF-cC-JmF" id="UZM-tW-IJ2"/>
+                                            <outlet property="favImageView" destination="nhU-hr-aEO" id="yQd-vI-wA2"/>
                                             <outlet property="favLabel" destination="7Nk-TS-IHn" id="sNC-K8-b2w"/>
+                                            <outlet property="likesImageView" destination="p7s-vO-4Yp" id="lw6-zg-6tb"/>
                                             <outlet property="likesLabel" destination="gMP-hX-x7M" id="EWz-W7-AZB"/>
                                             <outlet property="tourTitleLabel" destination="uoq-52-3hY" id="Wu0-im-DI5"/>
                                         </connections>
@@ -283,14 +287,14 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gyB-lJ-yih">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dure" translatesAutoresizingMaskIntoConstraints="NO" id="gyB-lJ-yih">
                                         <rect key="frame" x="10" y="225" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="YMc-VR-Tko"/>
                                             <constraint firstAttribute="width" constant="20" id="gcX-1t-81T"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FS0-u7-qfV">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="favorite" translatesAutoresizingMaskIntoConstraints="NO" id="FS0-u7-qfV">
                                         <rect key="frame" x="263" y="225" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="EJk-mI-16j"/>
@@ -378,4 +382,10 @@
             <point key="canvasLocation" x="1261.5999999999999" y="298.65067466266868"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="creator" width="60" height="60"/>
+        <image name="dure" width="90" height="90"/>
+        <image name="favorite" width="54" height="48"/>
+        <image name="like" width="60" height="52"/>
+    </resources>
 </document>

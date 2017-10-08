@@ -74,6 +74,13 @@ class MainViewController: UIViewController {
         self.sortView.layer.shadowOpacity = 1
         self.sortView.layer.shadowOffset = CGSize.zero
         self.sortView.layer.shadowRadius = 10
+        
+        let sortImageView: UIImageView = UIImageView(image: UIImage(named: "sort"))
+        sortImageView.frame = sortView.frame
+        sortImageView.tintColor = UIColor.gunPowder()
+        sortImageView.contentMode = .scaleAspectFit
+        self.sortView.addSubview(sortImageView)
+        
         self.sortView.addSubview(menu)
     }
     
@@ -124,6 +131,11 @@ internal class TourTableViewCell: UITableViewCell {
     @IBOutlet var dureLabel: UILabel!
     @IBOutlet var likesLabel: UILabel!
     
+    @IBOutlet var favImageView: UIImageView!
+    @IBOutlet var creatorImageView: UIImageView!
+    @IBOutlet var dureImageView: UIImageView!
+    @IBOutlet var likesImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
@@ -141,6 +153,11 @@ internal class TourTableViewCell: UITableViewCell {
         
         self.likesLabel.font = UIFont.mediumFont(size: 10)
         self.likesLabel.textColor = UIColor.springWood()
+        
+        self.favImageView.tintColor =  UIColor.gunPowder()
+        self.creatorImageView.tintColor =  UIColor.gunPowder()
+        self.dureImageView.tintColor =  UIColor.gunPowder()
+        self.likesImageView.tintColor =  UIColor.gunPowder()
         
     }
     

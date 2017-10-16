@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIColor {
     
-    enum Colors: String {
+    private enum Colors: String {
         case poloBlue = "#879CC1"
         case springWood = "#F7F6F0"
         case lightSlateGrey = "#82869F"
@@ -27,18 +27,10 @@ public extension UIColor {
         case porsche = "#DEA158"
         case buttermilk = "#FBF2B4"
         case jungleMist = "#B7D4D8"
-        
-        static func randomColor() -> UIColor {
-//            let allColors: [Colors] = [.poloBlue, .springWood, Colors.lightSlateGrey, .putty, .heather, .quillGrey, .gunPowder, .goldenSand, .hippieBlue, .smaltBlue, .cherokee, .porsche, .buttermilk, .jungleMist]
-            let tableColors: [Colors] = [.hippieBlue, .smaltBlue, .cherokee, .porsche, .buttermilk, .jungleMist]
-            let index = Int(arc4random_uniform(UInt32(tableColors.count)))
-            let color = tableColors[index].rawValue
-            return UIColor(hex: color)
-        }
     }
     
     convenience init(hex: String) {
-        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
@@ -57,9 +49,18 @@ public extension UIColor {
         }
     }
     
+    static func randomColor() -> UIColor {
+//            let allColors: [Colors] = [.poloBlue, .springWood, Colors.lightSlateGrey, .putty, .heather, .quillGrey, .gunPowder, .goldenSand, .hippieBlue, .smaltBlue, .cherokee, .porsche, .buttermilk, .jungleMist]
+        let tableColors: [Colors] = [.hippieBlue, .smaltBlue, .cherokee, .porsche, .buttermilk, .jungleMist]
+        let index = Int(arc4random_uniform(UInt32(tableColors.count)))
+        let color = tableColors[index].rawValue
+        return UIColor(hex: color)
+    }
+    
     // Main Colors
     
     static func poloBlue () -> UIColor {
+        
         return UIColor(hex: Colors.poloBlue.rawValue)
     }
     

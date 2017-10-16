@@ -25,7 +25,7 @@ class PopularView: UIViewController {
     
     @IBOutlet var showBtn: UIButton!
     
-    var pageIndex: Int! = 0
+    var pageIndex = 0
     
     var data: TourData!
     
@@ -43,7 +43,7 @@ class PopularView: UIViewController {
         
         titleLabel.text = data.tourName
         descriptionLabel.text = data.tourDescription
-        favLabel.text = "\(data.favs != nil ? data.favs! : 0)"
+        favLabel.text = "\(data.favs)"
         dureLabel.text = "1"
         
         showBtn.tintColor = UIColor.white

@@ -16,11 +16,11 @@ class PopularPageViewController: UIPageViewController, UIPageViewControllerDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tourData = TourData.createPopularDummyData()
+        tourData = ModelManager.createPopularDummyData()
         
         self.dataSource = self
         
-        self.setViewControllers([getViewControllerAtIndex(index: 0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
+        self.setViewControllers([getViewControllerAtIndex(index: 0)] as? [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,24 +29,32 @@ class PopularPageViewController: UIPageViewController, UIPageViewControllerDataS
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
-        let pageContent: PopularView = viewController as! PopularView
+        guard let pageContent = viewController as? PopularView else {
+            return nil
+        }
+        
         let index = pageContent.pageIndex
-        let previousIndex = abs((index! - 1) % tourData.count)
+        let previousIndex = abs((index - 1) % tourData.count)
         
         return getViewControllerAtIndex(index: previousIndex)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        let pageContent: PopularView = viewController as! PopularView
+        guard let pageContent = viewController as? PopularView else {
+            return nil
+        }
+        
         let index = pageContent.pageIndex
-        let nextIndex = abs((index! + 1) % tourData.count)
+        let nextIndex = abs((index + 1) % tourData.count)
         
         return getViewControllerAtIndex(index: nextIndex)
     }
     
-    func getViewControllerAtIndex (index: NSInteger) -> PopularView {
-        let popularView = self.storyboard?.instantiateViewController(withIdentifier: "PopularView") as! PopularView
+    func getViewControllerAtIndex (index: NSInteger) -> PopularView? {
+        guard let popularView = self.storyboard?.instantiateViewController(withIdentifier: "PopularView") as? PopularView else {
+            return nil
+        }
         
         let data = tourData[index]
         popularView.updateContent(data: data)

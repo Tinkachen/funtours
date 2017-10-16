@@ -16,14 +16,13 @@
 		235174111F7D26C7007704DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174101F7D26C7007704DF /* MainViewController.swift */; };
 		235174131F7D2DAF007704DF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174121F7D2DAF007704DF /* Color.swift */; };
 		235174151F7D2FB8007704DF /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174141F7D2FB8007704DF /* Font.swift */; };
-		235174191F7D3254007704DF /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174181F7D3254007704DF /* StationModel.swift */; };
-		2351741B1F7D327B007704DF /* CommentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351741A1F7D327B007704DF /* CommentsModel.swift */; };
 		2351741D1F7D36A7007704DF /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351741C1F7D36A7007704DF /* ModelManager.swift */; };
 		235174301F7E4780007704DF /* RadialMenuItemDistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351742F1F7E4780007704DF /* RadialMenuItemDistance.swift */; };
 		235174321F7E4E40007704DF /* RadialMenuItemPopularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174311F7E4E40007704DF /* RadialMenuItemPopularity.swift */; };
 		235174341F7E4E57007704DF /* RadialMenuItemDure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174331F7E4E57007704DF /* RadialMenuItemDure.swift */; };
 		2351743A1F7E81F4007704DF /* PopularPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235174391F7E81F4007704DF /* PopularPageViewController.swift */; };
 		2351743C1F7E8263007704DF /* PopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351743B1F7E8263007704DF /* PopularView.swift */; };
+		23A3C9DA1F8C1F2200C4F472 /* RadialMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A3C9D91F8C1F2200C4F472 /* RadialMenuItem.swift */; };
 		23C89C8F1F4EA99300C1B9FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C89C8E1F4EA99300C1B9FA /* AppDelegate.swift */; };
 		23C89C941F4EA99300C1B9FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C921F4EA99300C1B9FA /* Main.storyboard */; };
 		23C89C961F4EA99300C1B9FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23C89C951F4EA99300C1B9FA /* Assets.xcassets */; };
@@ -52,8 +51,6 @@
 		235174101F7D26C7007704DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		235174121F7D2DAF007704DF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		235174141F7D2FB8007704DF /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		235174181F7D3254007704DF /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
-		2351741A1F7D327B007704DF /* CommentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModel.swift; sourceTree = "<group>"; };
 		2351741C1F7D36A7007704DF /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 		2351742E1F7E440D007704DF /* funtours-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "funtours-Bridging-Header.h"; sourceTree = "<group>"; };
 		2351742F1F7E4780007704DF /* RadialMenuItemDistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialMenuItemDistance.swift; sourceTree = "<group>"; };
@@ -61,6 +58,7 @@
 		235174331F7E4E57007704DF /* RadialMenuItemDure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialMenuItemDure.swift; sourceTree = "<group>"; };
 		235174391F7E81F4007704DF /* PopularPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopularPageViewController.swift; path = funtours/DesignElements/PopularPageViewController.swift; sourceTree = SOURCE_ROOT; };
 		2351743B1F7E8263007704DF /* PopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularView.swift; sourceTree = "<group>"; };
+		23A3C9D91F8C1F2200C4F472 /* RadialMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadialMenuItem.swift; sourceTree = "<group>"; };
 		23C89C8B1F4EA99300C1B9FA /* funtours.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funtours.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23C89C8E1F4EA99300C1B9FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23C89C931F4EA99300C1B9FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,8 +121,6 @@
 			children = (
 				2351741C1F7D36A7007704DF /* ModelManager.swift */,
 				2351740E1F7D26AB007704DF /* TourDataModel.swift */,
-				2351741A1F7D327B007704DF /* CommentsModel.swift */,
-				235174181F7D3254007704DF /* StationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				2351742E1F7E440D007704DF /* funtours-Bridging-Header.h */,
+				23A3C9D91F8C1F2200C4F472 /* RadialMenuItem.swift */,
 				2351742F1F7E4780007704DF /* RadialMenuItemDistance.swift */,
 				235174311F7E4E40007704DF /* RadialMenuItemPopularity.swift */,
 				235174331F7E4E57007704DF /* RadialMenuItemDure.swift */,
@@ -383,9 +380,8 @@
 				235174321F7E4E40007704DF /* RadialMenuItemPopularity.swift in Sources */,
 				2351743A1F7E81F4007704DF /* PopularPageViewController.swift in Sources */,
 				235174341F7E4E57007704DF /* RadialMenuItemDure.swift in Sources */,
+				23A3C9DA1F8C1F2200C4F472 /* RadialMenuItem.swift in Sources */,
 				23C89C8F1F4EA99300C1B9FA /* AppDelegate.swift in Sources */,
-				235174191F7D3254007704DF /* StationModel.swift in Sources */,
-				2351741B1F7D327B007704DF /* CommentsModel.swift in Sources */,
 				235174111F7D26C7007704DF /* MainViewController.swift in Sources */,
 				235174301F7E4780007704DF /* RadialMenuItemDistance.swift in Sources */,
 			);

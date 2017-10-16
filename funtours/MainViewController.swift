@@ -14,16 +14,16 @@ import MTRadialMenu
 
 class MainViewController: UIViewController {
     
-    @IBOutlet var sortView: UIView!
+    @IBOutlet weak var sortView: UIView!
     
-    @IBOutlet var tourTableView: UITableView!
+    @IBOutlet weak var tourTableView: UITableView!
     
     var tourData: [TourData]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tourData = TourData.createDummyData()
+        tourData = ModelManager.createDummyData()
         
         tourTableView.delegate = self
         tourTableView.dataSource = self
@@ -46,20 +46,14 @@ class MainViewController: UIViewController {
         menu.radius = 90.0
         menu.incrementAngle = -30.0
         
-        let distance: Distance = Distance()
+        let distance = RadialMenuItem()
         distance.identifier = "distance"
-        distance.colorNormal = UIColor.hippieBlue()
-        distance.colorSelected = UIColor.smaltBlue()
         
-        let popularity: Popularity = Popularity()
+        let popularity = RadialMenuItem()
         popularity.identifier = "popularity"
-        popularity.colorNormal = UIColor.hippieBlue()
-        popularity.colorSelected = UIColor.smaltBlue()
         
-        let dure: Dure = Dure()
+        let dure = RadialMenuItem()
         dure.identifier = "dure"
-        dure.colorNormal = UIColor.hippieBlue()
-        dure.colorSelected = UIColor.smaltBlue()
         
         menu.add(distance)
         menu.add(popularity)
@@ -122,19 +116,19 @@ internal class TourTableViewCell: UITableViewCell {
     
     var data: TourData!
     
-    @IBOutlet var backgroundImageView: UIImageView!
-    @IBOutlet var backgroundFilterView: UIView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var backgroundFilterView: UIView!
     
-    @IBOutlet var tourTitleLabel: UILabel!
-    @IBOutlet var favLabel: UILabel!
-    @IBOutlet var creatorLabel: UILabel!
-    @IBOutlet var dureLabel: UILabel!
-    @IBOutlet var likesLabel: UILabel!
+    @IBOutlet weak var tourTitleLabel: UILabel!
+    @IBOutlet weak var favLabel: UILabel!
+    @IBOutlet weak var creatorLabel: UILabel!
+    @IBOutlet weak var dureLabel: UILabel!
+    @IBOutlet weak var likesLabel: UILabel!
     
-    @IBOutlet var favImageView: UIImageView!
-    @IBOutlet var creatorImageView: UIImageView!
-    @IBOutlet var dureImageView: UIImageView!
-    @IBOutlet var likesImageView: UIImageView!
+    @IBOutlet weak var favImageView: UIImageView!
+    @IBOutlet weak var creatorImageView: UIImageView!
+    @IBOutlet weak var dureImageView: UIImageView!
+    @IBOutlet weak var likesImageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -175,9 +169,9 @@ internal class TourTableViewCell: UITableViewCell {
         filterForBackgroundImage()
         
         tourTitleLabel.text = data.tourName
-        favLabel.text = "\(data.favs!)"
+        favLabel.text = "\(data.favs)"
         creatorLabel.text = data.creator
         dureLabel.text = ""
-        likesLabel.text = "\(data.likes!)"
+        likesLabel.text = "\(data.likes)"
     }
 }
